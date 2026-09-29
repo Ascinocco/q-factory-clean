@@ -1,0 +1,4 @@
+# q-factory runtime: the CLI talks to q-core over HTTP only.
+httpx==0.28.1
+# review_runner validates reviewer output against its JSON schema.
+jsonschema==4.26.0

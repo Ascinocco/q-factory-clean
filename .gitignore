@@ -1,0 +1,37 @@
+# Actual personal data never gets committed, even to a private repo.
+data/
+*.sqlite
+*.sqlite3
+*.db
+documents/
+# intake/ is the local statement drop folder: tracked so every clone has it,
+# contents never committed (q-core plugin intake_dir).
+/intake/*
+!/intake/.gitkeep
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+# q-factory is set up with pip + requirements*.txt; `uv run` in a checkout
+# writes a placeholder lock that would block session-sync's fast-forward.
+/uv.lock
+
+# OS
+.DS_Store
+
+# Local browser validation artifacts
+.playwright-cli/
+.playwright-mcp/
+output/playwright/
+
+# Managed-project task worktrees belong to their own repositories.
+/.worktrees/

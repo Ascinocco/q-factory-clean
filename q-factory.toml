@@ -1,0 +1,22 @@
+# q-factory configuration. Committed: no secrets here.
+# The API token comes from Q_CORE_API_TOKEN, in the environment or the
+# untracked root .env.
+
+[q_core]
+# Where q-core's API is reached: the server's Tailscale Serve origin.
+# Use this machine's own client token
+# (see README). --api-url overrides it per command, e.g. loopback on the server.
+# Placeholder: the real host and tailnet are set locally, never committed.
+api_url = "https://your-host.tailXXXXXX.ts.net"
+# The tailnet DNS suffix. Required before any https://<machine>.<tailnet>
+# api_url is accepted; without it only loopback origins are, so a typo can
+# never send the token to another tailnet.
+# Placeholder: set the real tailnet locally.
+tailnet = "tailXXXXXX.ts.net"
+
+[self]
+# q-factory's own Jyra identity, used by `reconcile --self`.
+# Placeholder UUIDs: set the real project and board ids locally.
+project_id = "00000000-0000-4000-8000-000000000001"
+board_id = "00000000-0000-4000-8000-000000000002"
+repository = "ascinocco/q-factory-clean"

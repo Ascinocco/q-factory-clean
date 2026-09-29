@@ -1,0 +1,6 @@
+[tool.pytest.ini_options]
+# q-factory imports from the repository root (q_factory/) with no path setup.
+pythonpath = ["."]
+# Every directory holding tests must be listed here; the root conftest fails
+# the run when one is not (see its pytest_configure).
+testpaths = ["tests"]

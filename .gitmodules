@@ -1,0 +1,7 @@
+[submodule "projects/chadmux"]
+	path = projects/chadmux
+	url = git@github.com:Ascinocco/chadmux-clean.git
+[submodule "projects/q-core"]
+	path = projects/q-core
+	url = git@github.com:Ascinocco/q-core-clean.git
+	branch = main
